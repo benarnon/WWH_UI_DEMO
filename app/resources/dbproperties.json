@@ -1,0 +1,28 @@
+[  {
+      "id": "c0",
+      "name": "Berlin",
+      "type": "hospital",
+      "location": {
+        "lat": 52.5200066,
+        "long": 13.404952
+      }
+    },
+    {
+      "id": "c1",
+      "name": "Berlin",
+      "type": "hospital",
+      "location": {
+        "lat": 52.5200066,
+        "long": 13.404952
+      }
+    },
+    {
+      "id": "c2",
+      "name": "Berlin",
+      "type": "hospital",
+      "location": {
+        "lat": 52.5200066,
+        "long": 13.404952
+      }
+    }
+]

@@ -1,0 +1,337 @@
+<!doctype html>
+
+<head>
+<meta charset="utf-8">
+
+
+<title>WWH-BIO app</title>
+<meta name="description" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================================================================= -->
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/themes/type_05.css">
+<link rel="stylesheet" href="css/themes/color_06.css">
+
+<!--[if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Favicons
+================================================================================================= -->
+<link rel="shortcut icon" href="images/favicons/favicon.ico">
+<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png">
+
+<!-- JS
+================================================================================================= -->
+<script src="js/libs/modernizr.min.js"></script>
+<script src="js/libs/jquery-1.8.3.min.js"></script>
+<script src="js/libs/jquery.easing.1.3.min.js"></script>
+<script src="js/libs/jquery.fitvids.js"></script>
+<script src="js/script.js"></script>
+
+</head>
+
+
+
+<body>
+
+<!-- Write preloader to page - this allows the site to load for users with JS disabled -->
+<script type="text/javascript">
+	document.write("<div id='sitePreloader'><div id='preloaderImage'><img src='images/site_preloader.gif' alt='Preloader' /></div></div>");
+</script>
+
+<div class="container">
+	
+	<!-- Header begins ========================================================================== -->
+	<header class="sixteen columns">
+		<div id="logo">
+			<h1>Bi-Clustering Results</h1>
+			<h2></h2>
+			<!--
+			<img src="images/logo.png" width="275" height="35" alt="Logo" />
+			-->
+		</div>
+		<nav>
+			<ul>
+				<!--<li><button id="workPage">Work</button></li>
+				<li><button id="aboutPage">About</button></li>
+				<!--<li><a href="http://wordpress.org" target="_blank">Blog</a></li>-->
+			</ul>
+		</nav>
+		<hr />
+	</header>
+	<!-- Header ends ============================================================================ -->
+	
+	<!-- Work page begins ======================================================================= -->
+	<div id="work">
+	
+		<div id="overview" class="sixteen columns">
+			<h3>October 15th 2015 </h3>
+			<hr />
+		</div>
+		
+		<div class="eight columns" id="col1">
+		
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Raw all against all heatmap</h4>
+			
+					</div>
+					<script>
+					window.addEventListener("load", function(){
+						var tmp = window.location.hash;
+						var mapID = tmp.slice(1);
+						var hmap = "<img src='images/projects/heatmap_" + "0" + ".jpg' alt='Heat-Map: all against all' class='thumbnailImage' />";
+						document.getElementById("heat").innerHTML=hmap;
+						})
+					
+
+					</script>
+					
+					<div id="heat"></div>
+					
+					
+				</div>
+				
+				<div class="projectInfo">
+					<h4>Raw all against all heatmap</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+					
+										<script>
+						window.addEventListener("load",function(){
+						var tmpo = window.location.hash;
+						var mapIDd = tmpo.slice(1);
+						var str = 'href="projects/project_01/index.html#' + mapIDd + '"';
+						var map = "<div class='projectNavEnlarge'><button class='enlargeButton' onClick='window.location." + str + "'>View full-size</button></div>";
+						document.getElementById("heat0").innerHTML=map;
+						})
+
+					</script>
+					
+					<div id="heat0"></div>
+						<!--  <div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/project_01/index.html'">View full-size</button></div> -->
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					<p>
+						This heatmap represents the raw scores of all gene-units against all samples in the current analysis.
+					</p>
+					<ul>
+						<!-- <li><strong>something:</strong> something</li>
+						<li><strong>something:</strong> something</li>
+						<li><strong>Year:</strong> 2013</li> -->
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>A candidate bicluster heatmap</h4>
+						
+  					</div>
+  					
+					<script>
+						window.addEventListener("load",function(){
+						var tmpo = window.location.hash;
+						var mapIDd = tmpo.slice(1);
+						var map = "<img src='images/projects/bi_heatmap_" + mapIDd + ".jpg' alt='Heat-Map' class='thumbnailImage' />";
+						document.getElementById("log").innerHTML=map;
+						})
+				    </script>
+				    
+					<div id="log"></div>
+
+				</div>
+				
+				<div class="projectInfo">
+					<h4>A candidate bicluster heatmap</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+					
+					<script>
+						window.addEventListener("load",function(){
+						var tmpo = window.location.hash;
+						var mapIDd = tmpo.slice(1);
+						var str = 'href="projects/project_02/index.html#' + mapIDd + '"';
+						var map = "<div class='projectNavEnlarge'><button class='enlargeButton' onClick='window.location." + str + "'>View full-size</button></div>";
+						document.getElementById("heat1").innerHTML=map;
+						})
+
+					</script>
+					
+					<div id="heat1"></div>
+					
+						<!--  <div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/project_02/index.html'">View full-size</button></div> -->
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					
+					<p>
+						This is a specific bicluster represented by reordering the original matrix such that the bicluster rows and columns are in the top left corner of the heatmap.
+					</p>
+					<ul>
+						<!-- <li><strong>Client:</strong> Wernham Hogg</li>
+						<li><strong>Role:</strong> Art Direction, Photography, Illustration</li>
+						<li><strong>Year:</strong> 2013</li> -->
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Map view of the outbreak cases</h4>
+					</div>
+
+					<img src="images/projects/googlemap.jpg" alt="Project 03" class="thumbnailImage" />
+				</div>
+					
+				<div class="projectInfo">
+					<h4>Map view of the outbreak cases</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+					
+					<script>
+						window.addEventListener("load",function(){
+						var tmpo = window.location.hash;
+						var mapIDd = tmpo.slice(1);
+						var str = 'href="../treeMap.html#' + mapIDd + '"';
+						var map = "<div class='projectNavEnlarge'><button class='enlargeButton' onClick='window.location." + str + "'>View Tree</button></div>";
+						document.getElementById("tree").innerHTML=map;
+						})
+
+					</script>
+					
+					<div id="tree"></div>
+						<!--  <div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='../treeMap.html#0'">View Tree</button></div> -->
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					<p>
+						Specific description- This is a graph of the outbreak cases augmented on a world map. Each node is a specific case of infection, and an edge between two nodes represents a probable relation between two infection cases.
+					</p>
+					<ul>
+					<!--	<li><strong>Client:</strong> Wernham Hogg</li>
+						<li><strong>Role:</strong> Art Direction, Photography, Illustration</li>
+						<li><strong>Year:</strong> 2013</li> -->
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+			
+			<!-- Project begins ================================================================= -->
+			<div class="project">
+				
+				<div class="projectThumbnail">
+					<svg class="thumbnailMask"></svg>
+					<div class="projectThumbnailHover">
+						<h4>Satellite view of the outbreak cases</h4>
+					</div>
+					<img src="images/projects/googleworld.jpg" alt="Project 04" class="thumbnailImage" />
+				</div>
+					
+				<div class="projectInfo">
+					<h4>Satellite view of the outbreak cases</h4>
+					<div class="projectNavCounter"></div>
+					<div class="projectNav">
+					
+					<script>
+						window.addEventListener("load",function(){
+						var tmpo = window.location.hash;
+						var mapIDd = tmpo.slice(1);
+						var str = 'href="../treeWorld.html#' + mapIDd + '"';
+						var map = "<div class='projectNavEnlarge'><button class='enlargeButton' onClick='window.location." + str + "'>View Tree</button></div>";
+						document.getElementById("world").innerHTML=map;
+						})
+
+					</script>
+					
+					<div id="world"></div>
+					
+						<!--  <div class="projectNavEnlarge"><button class="enlargeButton" onClick="window.location.href='projects/project_01/index.html'">View full-size</button></div> -->
+						<div class="projectNavClose"><button class="closeButton">Close</button></div>
+						<div class="projectNavButtons"><button class="prev"></button><button class="next"></button></div>
+					</div>
+					<p>
+						Specific description- This is a graph of the outbreak cases augmented on a world map. Each node is a specific case of infection, and an edge between two nodes represents a probable relation between two infection cases.
+					</p>
+					<ul>
+						<!-- <li><strong>Client:</strong> Wernham Hogg</li>
+						<li><strong>Role:</strong> Art Direction, Photography, Illustration</li>
+						<li><strong>Year:</strong> 2013</li> -->
+					</ul>
+				</div>
+				
+			</div>
+			<!-- Project ends =================================================================== -->
+
+			
+		</div><!-- col1 -->
+		
+		<!-- Even numbered projects are dynamically moved into this second column via JS -->
+		<div class="eight columns" id="col2">
+		</div>
+	
+	</div>
+	<!-- Work page ends ========================================================================= -->
+	
+	<!-- About page begins ====================================================================== -->
+	<div id="about">
+		
+		<!-- Column 1 begins ==================================================================== -->
+		<div class="eight columns">
+					
+		</div>
+		<!-- Column 1 ends ====================================================================== -->
+		
+		<!-- Column 2 begins ==================================================================== -->
+		<div class="eight columns">
+			
+			<img src="images/about.jpg" alt="About" />
+			
+			<ul class="linedList">
+				<li><strong>Location:</strong> Stockholm, Sweden</li>
+				<li><strong>Email:</strong> <a href="mailto:vector_creator@cs.bgu.ac.il">vector_creator@cs.bgu.ac.il</a></li>
+			</ul>
+			
+		</div>
+		<!-- Column 2 ends ====================================================================== -->
+		
+	</div>
+	<!-- About page ends ======================================================================== -->
+	
+	<!-- Footer begins ========================================================================== -->
+	<footer class="sixteen columns">
+		<hr />
+		<ul id="footerLinks">
+			<li>&copy; 2015 Ofir Etz-Hadar.</li>
+			<li><a href="mailto:ofiretz@post.bgu.ac.il">ofiretz@post.bgu.ac.il</a></li>
+		</ul>
+	</footer>
+	<!-- Footer ends ============================================================================ -->
+		
+</div><!-- container -->
+</body>
+</html>

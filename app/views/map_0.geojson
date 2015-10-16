@@ -1,0 +1,81 @@
+{
+"type": "FeatureCollection",
+"created" : "2014/07/08 03:00:55 GMT",
+"announced_date" : "2017/07/10 03:00:55 GMT",
+                                                                                
+"features": [{
+	"type" : "Feature",
+	"properties" : {
+		"name" : "Ebola",
+		"analized_data" : "2013/07/08 10:00:00 GMT"
+	},
+	"geometry" : {
+		"type" : "GeometryCollection",
+		"geometries" : [
+			{
+			"type" : "Point",
+			"coordinates" : [ -10.218936, 7.622190 ]
+			}, 
+			{
+			"type" : "Point",
+			"coordinates" : [ 7.128385, 9.294659 ]
+			},
+			{
+			"type" : "Point",
+			"coordinates" : [ -103.262848, 23.546108 ]
+			},
+			{
+			"type" : "Point",
+			"coordinates" : [ -65.827089, -18.813366 ]
+			},
+			{
+			"type" : "Point",
+			"coordinates" : [ 40.213861000644926, -1.669921875 ]
+			},
+			{
+			"type" : "Point",
+			"coordinates" : [ 5.888671875, 51.67255514839676 ]
+			},
+			{
+			"type" : "Point",
+			"coordinates" : [ 2.4609375, 48.922499263758255 ]
+			},
+			{
+			"type" : "Point",
+			"coordinates" : [ 3.779296875, 45.9511496866914 ]
+			},
+
+
+			{
+			"type" : "LineString",
+			"coordinates" : [ [ -10.218936, 7.622190 ], [ 7.128385, 9.294659 ] ]
+			},
+			{
+			"type" : "LineString",
+			"coordinates" : [ [ 7.128385, 9.294659 ], [ -103.262848, 23.546108 ]  ]
+			},
+			{
+			"type" : "LineString",
+			"coordinates" : [ [ -103.262848, 23.546108 ], [ -65.827089, -18.813366 ] ]
+			},
+			{
+			"type" : "LineString",
+			"coordinates" : [ [ -65.827089, -18.813366 ], [ 40.21386100064492, -1.669921875 ] ]
+			},
+			{
+			"type" : "LineString",
+			"coordinates" : [ [ 40.213861000644926, -1.669921875 ], [ 5.888671875, 51.67255514839676 ] ]
+			},
+			{
+			"type" : "LineString",
+			"coordinates" : [ [ 5.888671875, 51.67255514839676 ], [ 2.4609375, 48.922499263758255 ] ]
+			},
+			{
+			"type" : "LineString",
+			"coordinates" : [ [ 2.4609375, 48.922499263758255 ], [ 3.779296875, 45.9511496866914 ] ]
+			}
+
+		]
+	   }
+	 }]
+}

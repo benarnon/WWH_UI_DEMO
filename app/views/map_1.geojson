@@ -1,0 +1,40 @@
+{
+"type": "FeatureCollection",
+"created" : "2014/07/08 03:00:55 GMT",
+"announced_date" : "2017/07/10 03:00:55 GMT",
+                                                                                
+"features": [{
+	"type" : "Feature",
+	"properties" : {
+		"name" : "n18",
+		"analized_data" : "2013/07/08 10:00:00 GMT"
+	},
+	"geometry" : {
+		"type" : "GeometryCollection",
+		"geometries" : [
+			{
+			"type" : "Point",
+			"coordinates" : [ 71.015625, 60.58696734225869 ]
+			
+			}, 
+			{
+			"type" : "Point",
+			"coordinates" : [ 14.765625, 19.31114335506464 ]
+
+			},
+			{
+			"type" : "Point",
+			"coordinates" : [ 73.320559, 51.523029 ]
+
+			}
+
+		]
+	   }
+	 }]
+}
+
+
+
+               
+
+

@@ -1,0 +1,12 @@
+{ "trees":[
+           
+           { "name": "Ebola",
+        	   "id": 0},
+           { "name": "Flu",
+        		   "id": 1},
+           { "name": "Test_Output",
+        		   "id": 2}
+       
+           
+           
+           ] }

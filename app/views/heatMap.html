@@ -1,0 +1,38 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Frameset//EN"
+   "http://www.w3.org/TR/html4/frameset.dtd">
+<HTML>
+<HEAD>
+<TITLE>Displays</TITLE>
+</HEAD>
+
+<script>
+
+      var tmp = window.location.hash;
+      var mapID = tmp.slice(1);
+
+function loadFrames()
+{
+top.frame1.location = "./treeMap.html#"+mapID;
+}
+
+
+
+</script>
+
+<p>Presents biclustering results, including all samples and genomes</p>
+
+
+<div style="width:200px;heigth:200px;margin:0 auto">
+
+
+<img src="./heat_maps/heat_map_0.png" width="150" height="250">
+
+</div>
+
+
+
+
+
+</HTML>

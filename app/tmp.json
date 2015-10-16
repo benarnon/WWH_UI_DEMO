@@ -1,0 +1,119 @@
+{
+    "description": [
+        {
+            "name": "Ebola",
+            "date": "October 5th, 2007"
+        }
+    ],
+    "allSamples": [
+        {
+            "name": "s1",
+            "date": "2012-1-5",
+            "symptoms": [
+                "fever",
+                "heat",
+                "diaria"
+            ],
+            "GeneUnit": [
+                {
+                    "name": "g1",
+                    "abundance": 1.2
+                },
+                {
+                    "name": "g2",
+                    "abundance": 1.2
+                },
+                {
+                    "name": "g3",
+                    "abundance": 1.2
+                }
+            ]
+        },
+        {
+            "name": "s2",
+            "date": "2013-11-12",
+            "symptoms": [
+                "fever",
+                "heat",
+                "diaria"
+            ],
+            "GeneUnit": [
+                {
+                    "name": "g1",
+                    "abundance": 3.4
+                },
+                {
+                    "name": "g2",
+                    "abundance": 0.2
+                },
+                {
+                    "name": "g3",
+                    "abundance": 99.3
+                }
+            ]
+        }
+    ],
+    "BiClusters": [
+        {
+            "name": "bc1",
+            "id": 1,
+            "allSamples": [
+                {
+                    "name": "s1",
+                    "date": "2012-1-5",
+                    "symptoms": [
+                        "fever",
+                        "heat",
+                        "diaria"
+                    ],
+                    "GeneUnit": [
+                        {
+                            "name": "g1",
+                            "abundance": 1.2
+                        },
+                        {
+                            "name": "g2",
+                            "abundance": 1.2
+                        },
+                        {
+                            "name": "g3",
+                            "abundance": 1.2
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "bc2",
+            "id": 2,
+            "allSamples": [
+                {
+                    "name": "s1",
+                    "date": "2012-1-5",
+                    "symptoms": [
+                        "fever",
+                        "heat",
+                        "diaria"
+                    ],
+                    "GeneUnit": [
+                        {
+                            "name": "g1",
+                            "abundance": 3.2
+                        },
+                        {
+                            "name": "g2",
+                            "abundance": 0.2
+                        },
+                        {
+                            "name": "g3",
+                            "abundance": 4.2
+                        }
+                    ]
+                }
+            ]
+        }
+
+
+
+    ]
+}

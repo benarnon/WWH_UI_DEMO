@@ -1,0 +1,79 @@
+<html>
+<head>
+<title>Displays</title>
+</head>
+
+
+
+<script>
+var tmp = window.location.hash;
+var mapID = tmp.slice(1);
+var heatmap = './heat_maps/bi_heatmap_' + mapID + '.png';
+
+
+window.onload = function() {
+       //when the document is finished loading, replace everything
+       //between the <a ...> </a> tags with the value of splitText
+   document.getElementById("myMap").value=heatmap;
+} 
+
+
+
+</script>
+
+<body>
+
+
+
+<p>Biclustering results - one sample</p>
+
+
+ <!--  <div style="width:200px;height:100%;border:6px ridge orange"> <!-- ;margin:0 auto at the end -->
+  
+  <script>
+document.write("<img src=" + heatmap + ">");
+</script>
+
+<!--  <img src="./heat_maps/bi_heatmap_0.png" width="150" height="250"> -->
+<!--  </div> -->
+
+
+<p>Biclustering results - multi samples</p>
+
+<div style="width:200px;heigth:200px">
+
+ <!--   <div style="width:200px;height:100%;border:6px ridge orange"> -->
+
+<img src="./heat_maps/heat_map_0.png" ><!--  width="150" height="250"> -->
+
+<!--  </div> -->
+
+
+<p>Infection Tree</p>
+<a href="./treeMap.html#0">Full Screen</a>
+
+<iframe src="./treeMap.html#0" width="400" height="400"  ></iframe> 
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

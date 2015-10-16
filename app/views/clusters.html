@@ -1,0 +1,33 @@
+<div class="jumbotron">
+  <p>{{title}}</p>
+
+  <table style="width: 100%" class="table table-hover">
+    <caption style="text-align: center;">Results of the WWH-BioApp VectorCreator </caption>
+    <thead>
+      <tr>
+        <th style="text-align: center;" class="col-md-6">{{columnHeader1}}</th>
+        <th style="text-align: center;"  class="col-md-6">{{columnHeader2}}</th> 
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="data in dataSet" ng-animate="'animate'" ng-click='changeDataSet(data.geneUnits, data.id);changeTitle("Relative Abundance");changeColumnsHeader("Name", "Image")'>
+        <td>{{data.id || data.description}}</td>
+        <td>
+        <!-- replace this img tag with the following - and change the folder and name string the way you need-->
+
+        <img ng-if='title==="Relative Abundance"'ng-src="{{clusterID}}/{{data.id}}/{{data.id}}_circ.jpeg" width= "42" heigth = "42">
+		
+     
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="row">
+  <div class="col-md-12" style="text-align: center;">
+  <input class="btn btn-default" ng-click='changeDataSet(resetDataSet);changeTitle("Clusters");changeColumnsHeader("Name", "")' type="button" value="Back To Clusters">
+ <!--   <input class="btn btn-default" ng-click='changeDataSet(resetDataSetTrees);changeTitle("Bi-Clustering");changeColumnsHeader("Name", "Description")' type="button" value="Bi-Clustering Results"> -->
+  
+  </div>
+</div>
+  <!-- <div style="white-space: pre">{{dataSet | json}}</div> -->

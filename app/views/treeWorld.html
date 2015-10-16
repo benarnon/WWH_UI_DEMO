@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>TreeWorld</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+      #legend-container {
+        font-family: Arial, sans-serif;
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border: 3px solid #000;
+      }
+      #legend-container h3 {
+        margin-top: 0;
+      }
+      .legend-color-box {
+      	height:20px;
+		width:20px;
+		border-radius:3px;
+		float:left;
+		border:1px solid black;
+		margin-right:6px;        	
+      }
+      
+    </style>
+       
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="googleearth-compiled.js"></script>
+    
+
+
+	<script>
+	
+	google.load("earth", "1");
+
+		var map, cachedGeoJson;
+		
+		function initialize() {
+			  // Create a simple map.
+			  map = new google.maps.Map(document.getElementById('map-canvas'), {
+			    zoom: 2,
+			    center: {
+			      lat: 0,
+			      lng: 0
+			    }
+			  });
+			  
+
+			  // process the loaded GeoJSON data.
+			  google.maps.event.addListener(map.data, 'addfeature', function(e) {
+			    if (e.feature.getGeometry().getType() === 'GeometryCollection') {
+			      var geometry = e.feature.getGeometry().getArray();
+			      for (var i = 0; i < geometry.length; i++) {
+			        if (geometry[i].getType() === 'Point') {
+			          map.setCenter(geometry[i].get());
+					var feach = e.feature;
+					console.log(feach);
+			          new google.maps.Marker({
+	
+			            map: map,
+			            position: geometry[i].get()
+			          });
+			        } else if (geometry[i].getType() === 'LineString') {
+			          new google.maps.Polyline({
+			            map: map,
+			            path: geometry[i].getArray(),
+			            
+			            // make the polyline as arrow. 
+			            icons: [{
+			              icon: {
+			                path: google.maps.SymbolPath.FORWARD_CLOSED_ARROW,
+			                strokeOpacity: 1,
+			                scale: 2
+			              },
+			              offset: '100%'
+			            }],
+			            
+			            strokeColor: '#000000'
+			           
+			          })
+			        }
+			      }
+			    }
+			    map.data.setMap(null);
+			    
+			  });
+			  map.data.addGeoJson(data);
+			  map.setMapTypeId(google.maps.MapTypeId.SATELLITE);
+
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+			
+			var tmp = window.location.hash;
+			var mapID = tmp.slice(1);
+			var data =  {};
+			  $.getJSON('maps/map_' + mapID + '.geojson', function(data1) { 
+				    data=data1;
+				  }); 
+			  
+    </script>
+
+
+  </head>
+  <body>
+  
+    <div id="map-canvas"></div>
+    <div id="legend-container"><h3>Legend</h3></div>
+  </body>
+  
+  
+</html>
